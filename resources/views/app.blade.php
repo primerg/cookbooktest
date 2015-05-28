@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>@section('title') {{{ env('SITE_NAME', '') }}} @show</title>
+	<title>@section('title') Online Cookbook @show</title>
 
 	<link href="{{ asset('/css/app.css') }}" rel="stylesheet">
 
@@ -28,7 +28,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<h1>{!! Html::link('/', env('SITE_NAME', '')) !!}</h1>
+				<h1>{!! Html::link('/', 'Online Cookbook') !!}</h1>
 			</div>
 		</div>
 	</nav>
