@@ -11,11 +11,9 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+Route::get('/', 'CategoriesController@index');
+Route::resource('/categories', 'CategoriesController', ['only' => ['create', 'store']]);
 
-Route::get('home', 'HomeController@index');
+Route::get('/c/{id}', 'RecipesController@index');
+Route::resource('/recipes', 'RecipesController');
 
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-]);
