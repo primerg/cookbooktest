@@ -2,7 +2,7 @@
 
 @section('content')
 
-{!! Html::link('/recipes/create', 'Create new recipe') !!}
+{!! Html::link('/recipes/create', 'Create new recipe', ['class' => 'pull-right ']) !!}
 
 @if ($category)
 <h2>Category - {{{ $category->category_name }}}</h2>

@@ -13,17 +13,17 @@
 
 <div class="form-group">
     <label class="col-sm-2">Recipe Name <span class="required">*</span>:</label>
-    {!! Form::text('recipe_name', old('recipe_name'), ['class' => 'sm-form-control ', 'required' => 'required']) !!}
+    {!! Form::text('recipe_name', old('recipe_name'), ['class' => 'sm-form-control ']) !!}
 </div>
 
 <div class="form-group">
     <label class="col-sm-2">Category <span class="required">*</span>:</label>
-    {!! Form::select('category_id', $categories, old('category_id'), ['class' => 'sm-form-control ', 'required' => 'required']) !!}
+    {!! Form::select('category_id', $categories, old('category_id'), ['class' => 'sm-form-control ']) !!}
 </div>
 
 <div class="form-group">
     <label class="col-sm-2">Instruction <span class="required">*</span>:</label>
-    {!! Form::textarea('recipe_description', old('recipe_description'), ['class' => 'sm-form-control', 'required' => 'required']) !!}
+    {!! Form::textarea('recipe_description', old('recipe_description'), ['class' => 'sm-form-control']) !!}
 </div>
 
 <div class="form-group">

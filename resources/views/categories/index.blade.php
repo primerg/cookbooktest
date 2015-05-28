@@ -2,7 +2,7 @@
 
 @section('content')
 
-{!! Html::link('/categories/create', 'Create category') !!}
+{!! Html::link('/categories/create', 'Create category', ['class' => 'pull-right ']) !!}
 
 <h2>Recipes Categories</h2>
 
