@@ -145,7 +145,6 @@ return [
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
 
-		'Laracasts\Generators\GeneratorsServiceProvider',
 		'Illuminate\Html\HtmlServiceProvider',
 
 	],
